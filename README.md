@@ -20,7 +20,7 @@
   
   <h2>Demo</h2>
   <p>
-    <img src="https://github.com/user-attachments/assets/f1defffa-2abc-4ba4-8f73-280756d7eae3" width=600/>
+    <img src="https://github.com/user-attachments/assets/f1defffa-2abc-4ba4-8f73-280756d7eae3" width=900/></br>
     <a href="https://Jashbaua.github.io/Memory-card-game" target="_blank">
       Memory card game
     </a>
