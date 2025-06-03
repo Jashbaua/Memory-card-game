@@ -6,7 +6,7 @@
   
   <p>
     A simple React-based memory card game that uses hooks to manage state and fetch images
-    from an external API. The goal is to flip cards, remember their positions, and match pairs.
+    from an external API. The goal is to click on all unique cards exactly once
     Track your current score and best score, and enjoy a new shuffle every time you click a card!
   </p>
   
@@ -39,34 +39,19 @@ npm install</code></pre>
   
   <p>Open <code>http://localhost:3000</code> in your browser to view the game.</p>
   
-  <h2>Project Structure</h2>
-  <ul>
-    <li><code>public/</code> – Static files and <code>index.html</code>.</li>
-    <li><code>src/</code>
-      <ul>
-        <li><code>components/</code> – Reusable React components like <code>Card</code>, <code>Scoreboard</code>, etc.</li>
-        <li><code>hooks/</code> – Custom hooks for fetching data and managing game logic.</li>
-        <li><code>App.js</code> – Main entry point for rendering the game board and managing state.</li>
-        <li><code>index.js</code> – Renders the <code>App</code> component into the DOM.</li>
-      </ul>
-    </li>
-    <li><code>package.json</code> – Project metadata and dependencies.</li>
-  </ul>
-  
   <h2>How It Works</h2>
   <ol>
     <li>On mount, the <code>App</code> component fetches a set of images (e.g., 8–12 unique images) from an external API.</li>
-    <li>Each image is duplicated to form pairs, then all cards are shuffled.</li>
+    <li>Each image is unique.</li>
     <li>When a user clicks on a card:
       <ul>
-        <li>The card flips to reveal the image.</li>
-        <li>State updates to track which cards are currently flipped.</li>
-        <li>If two cards match, they stay revealed; if not, they flip back after a short delay.</li>
-        <li>The score increments with each successful match, and <strong>Best Score</strong> updates if the current score exceeds it.</li>
-        <li>Cards are reshuffled for a fresh challenge each turn.</li>
+        <li>The cards shuffle</li>
+        <li>State updates to track new positions</li>
+        <li>If the same card is click twice you lose</li>
+        <li>The score increments with each successful unique card click, and <strong>Best Score</strong> updates if the current score exceeds it.</li>
       </ul>
     </li>
-    <li>Game continues until all pairs are found.</li>
+    <li>Game continues until all cards are clicked exactly once.</li>
   </ol>
   
   <h2>Technologies Used</h2>
