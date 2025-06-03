@@ -20,11 +20,11 @@
   
   <h2>Demo</h2>
   <p>
-    <em>(If deployed, you can link your live demo here.)</em><br>
-    <img href="https://github.com/user-attachments/assets/f1defffa-2abc-4ba4-8f73-280756d7eae3" width=600/>
+    <img src="https://github.com/user-attachments/assets/f1defffa-2abc-4ba4-8f73-280756d7eae3" width=600/>
     <a href="https://Jashbaua.github.io/Memory-card-game" target="_blank">
       Memory card game
     </a>
+
   </p>
   
   <h2>Getting Started</h2>
